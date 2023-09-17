@@ -17,7 +17,7 @@ const NavBar = (props) => {
 
     return (
         <nav>
-            <ul className='flex flex-col md:flex-row justify-center items-center'>
+            <ul className='flex flex-col md:flex-row justify-center items-center gap-10'>
                 {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
         </nav>
