@@ -18,7 +18,7 @@ const NavBar = (props) => {
 
     return (
         <nav>
-            <AiOutlineMenu></AiOutlineMenu>
+            <AiOutlineMenu className='text-3xl md:hidden'></AiOutlineMenu>
             <ul className='flex flex-col md:flex-row justify-center items-center gap-10'>
                 {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
