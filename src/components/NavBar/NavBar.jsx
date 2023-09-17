@@ -25,7 +25,7 @@ const NavBar = (props) => {
 }
 
 NavBar.propTypes = {
-
+    props: PropTypes.array
 }
 
 export default NavBar

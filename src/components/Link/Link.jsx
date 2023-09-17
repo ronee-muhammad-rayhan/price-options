@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Link({ route }) {
     return (
@@ -8,6 +9,10 @@ function Link({ route }) {
             </li>
         </>
     )
+}
+
+Link.propTypes = {
+    route: PropTypes.object.isRequired
 }
 
 export default Link
