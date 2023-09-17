@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from '../Link/Link';
 
 const NavBar = (props) => {
 
@@ -17,7 +18,7 @@ const NavBar = (props) => {
     return (
         <nav>
             <ul className='flex flex-col md:flex-row justify-center items-center'>
-                {routes.map(route => <a className='ml-6' key={route.id} href={route.path}>{route.title}</a>)}
+                {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
         </nav>
     )
