@@ -12,12 +12,11 @@ const NavBar = (props) => {
         { "id": 6, "title": "NotFound", "content": "404 Not Found.", "path": "*" }
     ];
 
-
     const { } = props
 
     return (
         <>
-            <h1>NavBar</h1>
+            {routes.map(route => <li>{route.title}</li>)}
         </>
     )
 }
