@@ -16,7 +16,10 @@ const NavBar = (props) => {
 
     return (
         <>
-            {routes.map(route => <li>{route.title}</li>)}
+            <ul className='flex flex-col md:flex-row justify-center items-center'>
+                {routes.map(route => <a className='ml-6' key={route.id} href={route.path}>{route.title}</a>)}
+            </ul>
+
         </>
     )
 }

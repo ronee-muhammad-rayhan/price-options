@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
-      <h1 className='text-7xl bg-rose-500'>Vite + React</h1>
+      <h1 className='text-5xl text-center bg-rose-500'>Price Options</h1>
 
 
       <div className="hero min-h-screen bg-base-200">
