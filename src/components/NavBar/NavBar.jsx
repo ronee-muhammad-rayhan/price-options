@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../Link/Link';
-import { FaBeer } from 'react-icons/fa';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 const NavBar = (props) => {
 
@@ -18,7 +18,7 @@ const NavBar = (props) => {
 
     return (
         <nav>
-            <FaBeer></FaBeer>
+            <AiOutlineMenu></AiOutlineMenu>
             <ul className='flex flex-col md:flex-row justify-center items-center gap-10'>
                 {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
