@@ -26,7 +26,9 @@ const NavBar = (props) => {
                 }
 
             </div>
-            <ul className={`flex flex-col md:flex-row justify-center items-center gap-10 absolute bg-yellow-200 px-6 shadow-lg`} >
+            <ul className={`flex flex-col md:flex-row justify-center items-center gap-10 absolute
+            ${open ? '' : 'hidden'}
+            bg-yellow-200 px-6 shadow-lg`} >
                 {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
         </nav>
