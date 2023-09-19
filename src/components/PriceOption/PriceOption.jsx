@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 const PriceOption = ({ option }) => {
     return (
         <div>
-
+            {
+                option.features.map(feature => <li>{feature}</li>)
+            }
         </div>
     )
 }

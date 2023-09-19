@@ -1,4 +1,5 @@
 import React from 'react'
+import PriceOption from '../PriceOption/PriceOption'
 
 function PriceOptions() {
 
@@ -48,9 +49,9 @@ function PriceOptions() {
 
     return (
         <>
-            <h1>PriceOptions</h1>
+            <h1 className='text-5xl'>Best PriceOptions in the town</h1>
             {
-                gymPriceOptions.map(option => <h3>{option.name}</h3>)
+                gymPriceOptions.map(option => <PriceOption option={option}></PriceOption>)
             }
         </>
     )
