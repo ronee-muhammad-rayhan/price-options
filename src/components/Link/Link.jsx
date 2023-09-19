@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function Link({ route }) {
     return (
         <>
-            <li>
+            <li className='mr-10 px-6 hover:bg-yellow-500'>
                 <a href={route.path}>{route.title}</a>
             </li>
         </>
