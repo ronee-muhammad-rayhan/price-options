@@ -1,4 +1,5 @@
 import './App.css'
+import DaisyNavBar from './components/DaistNavBar/DaisyNavBar'
 import NavBar from './components/NavBar/NavBar'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <h1 className='text-5xl text-center bg-rose-500'>Price Options</h1>
+      <DaisyNavBar></DaisyNavBar>
 
 
       <div className="hero min-h-screen bg-base-200">
